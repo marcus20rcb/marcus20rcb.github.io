@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ordens de Serviço</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js">
+// Nossos rótulos para o eixo X
+    var meses = ["Setembro","Outubro","Novembro","Dezembro","Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro"];
+// Para desenhar as linhas
+    var planejadas = [16,10,13,38,41,49,35,35,34];
+    var executadas = [13,10,7,29,35,34,31,35,33];
+    var ctx = document.getElementById("myChart");
+    var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+        labels: meses,
+        datasets: [
+            { 
+                data: planejadas,
+                label: "planejadas"
+                borderColor: "#3e95cd",
+                fill: false
+            },
+            { 
+                data: executadas,
+                label: "executadas"
+                borderColor: "#3e95cd",
+                fill: false
+            }
+        ]   
+    }
+});
+
+        </script>
+            <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <main>
+            <canvas id="myChart" width="1600" height="900"></canvas>
+        </main>
+    </body>
+</html>
