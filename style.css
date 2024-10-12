@@ -26,4 +26,17 @@ body {
     display: block;
     color: #3e95cd;
   }
-  
+  header .container{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+  }
+  header nav a{
+    text-decoration:none;
+    color:#AAA;
+    margin-right: 10px;
+  }
+  header nav a:hover{
+    color:#fff;
+  }
