@@ -1,10 +1,10 @@
-// Our labels along the x-axis
+//primeiro grafico - nomes dos meses na horizontal
 var meses = ['janeiro','fevereiro','março','abril','maio','junho','julho','agosto'];
-// For drawing the lines
+//desenho das linhas
 var planejadas = [10,13,38,41,49,35,35,34];
 var executadas = [10,7,29,35,34,31,35,33];
 
-
+//puxando desenho dos graficos do chartjs
 var ctx = document.getElementById("graf1");
 var graf1 = new Chart(ctx, {
   type: 'line',
@@ -27,8 +27,9 @@ var graf1 = new Chart(ctx, {
   }
 });
 
-//segundo gráfico
+//segundo gráfico - nomes das atividades
 var tiposOs = ['Obra','Preventiva','Instalação','Instalação Corporativo','Massiva','Suporte','Comercial']
+//quantidade para tamanho dos graficos
 var quantidadeExecutadas = [34,20,19,13,11,6,2]
 
 var ctx = document.getElementById("graf2");
@@ -55,8 +56,14 @@ var graf2 = new Chart(ctx, {
   }
 });
 
+const config = {
+  type: 'doughnut',
+  data: graf2.data,
+  plugins: [plugin],
+};
+
 const image = new Image();
-image.src = 'C:\Users\Pedro\Documents\GitHub\site\Imagem1.png';
+image.src = 'https://www.chartjs.org/img/chartjs-logo.svg';
 
 const plugin = {
   id: 'customCanvasBackgroundImage',
