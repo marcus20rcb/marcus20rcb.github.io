@@ -1,0 +1,27 @@
+name: Salvar dados do formulário
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Run script
+      run: |
+        echo "Processando dados do formulário..."
+        # Seu script para processar os dados e salvar no repositório
+        node process_data.js
+    - name: Commit changes
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
+        git add .
+        git commit -m 'Adicionando novos dados do formulário'
+        git push
