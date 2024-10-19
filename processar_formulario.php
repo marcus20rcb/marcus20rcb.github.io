@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $dados = "Nome: $nome\nEmail: $email\nMensagem: $mensagem\n\n";
 
-    $arquivo = fopen("dados_formulario.txt", "a");
+    $arquivo = fopen("https://marcus20rcb.github.io/dados_formulario.txt", "a");
     fwrite($arquivo, $dados);
     fclose($arquivo);
 
