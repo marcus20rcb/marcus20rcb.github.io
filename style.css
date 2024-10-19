@@ -1,6 +1,10 @@
 body {
     font-family: Helvetica Neue, Arial, sans-serif;
     text-align: center;
+    background-image: url(https://marcus20rcb.github.io/background.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-attachement: fixed;
   }
   
   .wrapper {
@@ -36,7 +40,7 @@ body {
   }
   header nav a{
     text-decoration:none;
-    color:#AAA;
+    color:#3e95cd;
     margin-right: 10px;
   }
   header nav a:hover{
