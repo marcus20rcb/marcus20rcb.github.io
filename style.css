@@ -1,10 +1,6 @@
 body {
     font-family: Helvetica Neue, Arial, sans-serif;
     text-align: center;
-    background-image: url(https://marcus20rcb.github.io/background.png);
-    background-attachment: scroll;
-    background-attachement: fixed;
-    background-size: 1366px 960px;
   }
   
   .wrapper {
