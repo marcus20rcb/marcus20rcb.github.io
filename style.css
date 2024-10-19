@@ -32,7 +32,7 @@ body {
     flex-direction: row;
     align-items:center;
     justify-content: space-between;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
   }
   header nav a{
     text-decoration:none;
@@ -45,5 +45,5 @@ body {
 
   .logo {
     max-width: 200px;
-    max-height: 100px;
+    max-height: 200px;
   }
