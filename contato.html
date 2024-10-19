@@ -14,11 +14,26 @@
         <a href="https://marcus20rcb.github.io/index.html">Início</a>
         <a href="https://marcus20rcb.github.io/equipe.html">Equipe</a>
         <a href="https://marcus20rcb.github.io/estatisticas.html">Estatísticas</a>
-        <a href="https://marcus20rcb.github.io/curriculo.html">Curriculo & Contato</a>
+        <a href="https://marcus20rcb.github.io/contato.html">Contato</a>
       </nav>
     </div>
   </header>
   <body>
+    <main>
+      <h2>Fale conosco!</h2>
+      <form action="processar_formulario.php" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+    
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
+    
+        <input type="submit" value="Enviar">
+      </form>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
