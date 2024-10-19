@@ -1,6 +1,10 @@
 body {
     font-family: Helvetica Neue, Arial, sans-serif;
     text-align: center;
+    background-image: url(https://marcus20rcb.github.io/background.png);
+    background-attachment: scroll;
+    background-attachement: fixed;
+    background-size: 1366px 960px;
   }
   
   .wrapper {
@@ -12,6 +16,7 @@ body {
     font-weight: 200;
     font-size: 2em;
     margin: 0 0 0.1em 0;
+    color: #3e95cd;
   }
   
   h2 {
@@ -19,6 +24,10 @@ body {
     font-size: 0.9em;
     margin: 0 0 50px;
     color: #999;
+    color: #3e95cd;
+  }
+  h3{
+    color: #3e95cd;
   }
   
   a {
@@ -33,11 +42,7 @@ body {
     align-items:center;
     justify-content: space-between;
     padding-bottom: 20px;
-    background-image: url(https://marcus20rcb.github.io/background.png);
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-attachement: fixed;
-    background-size: 1366px 960px;
+    font-weight: bold;
   }
   header nav a{
     text-decoration:none;
@@ -51,4 +56,7 @@ body {
   .logo {
     max-width: 400px;
     max-height: 400px;
+  }
+  canvas{
+    background-color: azure;
   }
